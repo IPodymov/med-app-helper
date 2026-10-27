@@ -1,0 +1,146 @@
+.blog-screen {
+  display: flex;
+  justify-content: center;
+  padding: 32px 24px;
+}
+
+.blog {
+  width: min(800px, 100%);
+}
+
+.blog-title {
+  margin: 0 0 10px;
+  color: #222;
+  font-size: 34px;
+}
+
+.blog-description {
+  margin: 0 0 28px;
+  color: #666;
+  font-size: 17px;
+}
+
+.blog-list {
+  display: grid;
+  gap: 16px;
+}
+
+.blog-card {
+  display: block;
+  padding: 24px;
+  color: inherit;
+  text-decoration: none;
+  background: #fff;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgb(0 0 0 / 6%);
+  transition: transform 0.15s, box-shadow 0.15s;
+}
+
+.blog-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 14px 34px rgb(0 0 0 / 10%);
+}
+
+.blog-card-title {
+  margin: 12px 0 8px;
+  color: #222;
+  font-size: 22px;
+}
+
+.blog-card-summary {
+  margin: 0 0 14px;
+  color: #555;
+  line-height: 1.6;
+}
+
+.blog-card-more {
+  color: #1677ff;
+  font-weight: bold;
+}
+
+.blog-meta {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px;
+  color: #888;
+  font-size: 14px;
+}
+
+.blog-tag {
+  padding: 4px 12px;
+  color: #1677ff;
+  background: #e8f1ff;
+  border-radius: 20px;
+}
+
+.blog-post {
+  padding: 36px 40px;
+  background: #fff;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgb(0 0 0 / 6%);
+}
+
+.blog-post .blog-title {
+  margin: 14px 0 20px;
+  font-size: 30px;
+}
+
+.blog-back {
+  display: inline-block;
+  margin-bottom: 20px;
+  color: #1677ff;
+  text-decoration: none;
+}
+
+.blog-post-text,
+.blog-post-list {
+  color: #333;
+  font-size: 17px;
+  line-height: 1.7;
+}
+
+.blog-post-list {
+  padding-left: 22px;
+}
+
+.blog-post-list li {
+  margin-bottom: 6px;
+}
+
+.blog-notice {
+  margin: 28px 0 16px;
+  color: #888;
+  font-size: 13px;
+}
+
+.blog-cta {
+  display: inline-block;
+  padding: 14px 22px;
+  color: #fff;
+  background: #1677ff;
+  border-radius: 10px;
+  text-decoration: none;
+}
+
+.blog-cta:hover {
+  background: #0d5dcc;
+}
+
+@media (max-width: 520px) {
+  .blog-screen {
+    padding: 20px 16px;
+  }
+
+  .blog-title {
+    font-size: 28px;
+  }
+
+  .blog-post {
+    padding: 24px 20px;
+  }
+
+  .blog-post .blog-title {
+    font-size: 24px;
+  }
+}

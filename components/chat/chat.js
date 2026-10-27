@@ -13,14 +13,9 @@ export function renderChat() {
   chatScreen.className = "chat-screen";
   chatScreen.innerHTML = `
     <div class="chat">
-      <div class="chat-header">МедИИ</div>
+      <div class="chat-header">Чат с помощником</div>
       <div class="messages" aria-live="polite">
-        <div class="ai-message">
-          Здравствуйте! 👋 Я — МедИИ, ваш медицинский помощник. Опишите вашу жалобу:
-          что болит, какие симптомы, как давно это длится. Я дам подробные рекомендации
-          и подскажу, когда нужно к врачу.
-          <div class="quick-buttons"></div>
-        </div>
+        <div class="ai-message">Здравствуйте! 👋 Я — МедИИ, ваш медицинский помощник. Опишите вашу жалобу: что болит, какие симптомы, как давно это длится. Я дам рекомендации и подскажу, когда нужно к врачу.<div class="quick-buttons"></div></div>
       </div>
       <div class="notice">⚠️ Информация носит справочный характер и не заменяет консультацию врача.</div>
       <form class="input-area">
@@ -75,7 +70,7 @@ export function renderChat() {
       typing.remove();
       appendMessage(
         "error-message",
-        `❌ Ошибка: ${error.message}\n\nПроверьте:\n1. Терминал с Ollama открыт\n2. Запущена: ollama run qwen3:1.7b\n3. Браузер открыт через Live Server`,
+        `❌ Ошибка: ${error.message}\n\nПроверьте:\n1. Docker Desktop запущен\n2. Проект запущен командой npm run dev`,
       );
     } finally {
       input.disabled = false;

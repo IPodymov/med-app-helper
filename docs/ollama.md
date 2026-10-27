@@ -8,7 +8,8 @@
 - контейнер: `medical-app-ollama`;
 - API: `http://localhost:11434`;
 - volume: `ollama-data` для `/root/.ollama`;
-- автоматический перезапуск: `unless-stopped`.
+- автоматический перезапуск: `unless-stopped`;
+- healthcheck: `ollama list`, его ждёт `npm run dev`.
 
 ## Управление
 
